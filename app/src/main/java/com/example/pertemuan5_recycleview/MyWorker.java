@@ -20,7 +20,7 @@ public class MyWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        displayNotification("2018094", "M. AFIF HIDAYATUR ROHMAN");
+        displayNotification("2018087", "Billianthony Sanendri Junior");
         return Result.success();
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -28,13 +28,13 @@ public class MyWorker extends Worker {
         NotificationManager manager = (NotificationManager)
                 getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationChannel channel = new
-                NotificationChannel("2018094", "M. AFIF HIDAYATUR ROHMAN",
+                NotificationChannel("2018087", "Billianthony Sanendri Junior",
                 NotificationManager.IMPORTANCE_HIGH);
         manager.createNotificationChannel(channel);
         NotificationCompat.Builder builder = new
 
                 NotificationCompat.Builder(getApplicationContext(),
-                "2018094")
+                "2018087")
                 .setContentTitle(task)
                 .setContentText(desc)
                 .setSmallIcon(R.mipmap.ic_launcher)
